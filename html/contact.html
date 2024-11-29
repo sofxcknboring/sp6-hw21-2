@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-lg-2 p-3 bg-light">
+        <h4>Меню</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="category.html">Категория</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+        <div class="dropdown position-absolute bottom-0 start-0 mb-3 ms-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Пользователь
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="/profile">Профиль</a></li>
+            <li><a class="dropdown-item" href="/logout">Выход</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-9 col-lg-10 p-3">
+        <h1>Контакты</h1>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5>Свяжитесь с нами</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros nulla. Nulla facilisi. Integer ut purus non libero ullamcorper fermentum. Sed eget cursus arcu, ut ultricies ipsum. Integer in ultricies lorem. Mauris auctor, libero nec fermentum ultricies, tortor quam feugiat libero, sit amet convallis felis lectus at nunc.</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Форма обратной связи</h5>
+            <form action="/send-message" method="post">
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Почта</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
